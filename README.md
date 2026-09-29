@@ -37,7 +37,7 @@ Este projeto está sendo desenvolvido durante o período da pós-graduação e
 
 
 ## Organização do projeto 
-
+```text
 rfm_segmentation/
 │
 ├── src/
@@ -58,6 +58,7 @@ rfm_segmentation/
 │       └── config.py
 │
 └── main.py                        # Ponto de entrada 
+```
 
 ## Como rodar 
 
