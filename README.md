@@ -1,27 +1,38 @@
-# Aplicação WEB de Segmentação de Clientes através de modelo Clustering 
+<div align="center">
 
-Este projeto está sendo desenvolvido durante o período da pós-graduação e 
+# 📊 Mapeamento de Perfis Socioeconômicos
+### *Modelo de Clustering com Dados da Pesquisa "Condições de Vida 2017" (IBGE)*
 
-## Objetivos 
-1. Segmentação não supervisionada
-2. Mapeamento de perfis
-3. Arquitetura Desacoplada 
-4. Visualização de impacto
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
 
-## Tarefas
-1. Definição do problema de Segmentação de Clientes; 
-2. Definição de Arquitetura Hexagonal para organização de pastas e dependências do código;
-3. Escolha de modelo de machine learning para treinamento de problema de cluster;
-4. Escolha de ferramentas de avaliação do modelo;
-5. Criação de dashboard final composto com características dos padrões de compra, assim. identificamos os clientes ATIVOS, EM RISCO e INATIVOS;
+---
 
-## Tecnologias utilizadas
-- Linguagem : Python
-- Bibliotecas para processamento de dados (Pandas, Matplotlib, Skit-learn )
-- API : Fastapi
-- Dashboard : Streamlit, Plotly, Seaborn
-- Arquitetura : Ports & Adapters (Hexagonal), pytest
+*Aplicação Web desenvolvida para análise, clusterização e visualização interativa de dados socioeconômicos e vulnerabilidade alimentar.
+            Este projeto está sendo desenvolvido durante o processo de desenvolvimento de habilidades em Ciência de Dados.*
 
+</div>
+
+
+## Resumo do projeto : 
+
+- Este projeto utiliza dataset da base de dados do IBGE, nomeado "Condições de Vida 2017". 
+
+- Objetivo: Realizar o mapeamento de perfis socioeconômicos através das condições de moradia,infraestrutura e padrão de vida 
+
+- Contexto : Como o mapeamento de perfis socioeconômicos influenciam na criação de planos de desenvolvimento sustentável?
+
+## Passos para o desenvolvimento do projeto :
+
+1. Realizar da Análise Exploratória de Dados
+2. Aplicar a Featuring Engeneering para geração de Indíces para avaliação da infraestrutura, vulnerabilidade alimentar e capacidade dos grupos sociais da pesquisa
+3. Aplicar modelo de clustering
+4. Criação de dashboard para visualização de perfis de socioeconômicos (Alta vulnerabilidade, Em Risco e Estruturado)
+   
 
 ## Base de dados de Análise 
 - Pesquisa do IBGE -  Condições de Vida 2017 : 
@@ -34,6 +45,26 @@ Este projeto está sendo desenvolvido durante o período da pós-graduação e
     3. Problemas Habitacionais e Socioambientais
     4. Dificuldades Financeiras e Insegurança Alimentar (EBIA)
     5. Avaliação Subjetiva de Renda e Pesos Amostrais
+
+- Perguntas da EBIA (Insegurança Alimentar / Fatos objetivamente ocorridos)
+- Exemplo: Houve falta de alimentos por conta da falta de dinheiro? Deixaram de fazer uma refeição?
+    - 1 : SIM
+    - 2 : NÃO
+
+- Perguntas de Avaliação de Padrão de Vida
+- Exemplo : Como você considera o seu padrão de vida em relação a moradia/alimentação/vestuário/saúde/lazer?
+    - 1: BOM
+    - 2: SATISFATÓRIO
+    - 3: RUIM
+    - 4: NÃO DISPONÍVEL/NÃO UTILIZADO
+ 
+      
+## Tecnologias utilizadas
+- Linguagem : Python
+- Bibliotecas para processamento de dados (Pandas, Matplotlib, Skit-learn )
+- API : Fastapi
+- Dashboard : Streamlit, Plotly, Seaborn
+- Arquitetura : Ports & Adapters (Hexagonal), pytest
 
 
 ## Organização do projeto 
